@@ -5,8 +5,7 @@
 # Author 晁永生
 
 #Usage
-# $ mkfifo /tmp/f
-# $ cat /tmp/f | hfs.sh <path to html root> | netcat -l 8080 >/tmp/f
+# $ socat tcp-listen:8080,reuseaddr exec:"./ncget.sh <html root>"
 
 dbg()
 {
